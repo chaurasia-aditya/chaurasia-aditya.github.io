@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="description"
+      content="Built using Spring Boot, Hibernate, Spring Data JPA, Thymeleaf"
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Aditya Chaurasia's Portfolio">
+<meta itemprop="description" content="Built using Spring Boot, Hibernate, Spring Data JPA, Thymeleaf">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://ossportfolio.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aditya Chaurasia's Portfolio">
+<meta property="og:description" content="Built using Spring Boot, Hibernate, Spring Data JPA, Thymeleaf">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aditya Chaurasia's Portfolio">
+<meta name="twitter:description" content="Built using Spring Boot, Hibernate, Spring Data JPA, Thymeleaf">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style2.css"  />
+    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=B2p31V3vFLaiDNV8K_seFbDL5r0zys7ArAYzBj1oy6BYY37L6RBhwym9eS1gmR6s" charset="UTF-8"></script><script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Aditya Chaurasia's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#education">Education</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hi, I'm Aditya Chaurasia</span>
+            <span>Software Engineer</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            A goal-driven Software Engineer, with 4 years of experience in the IoT space at Samsung.
+            I like working on projects seeking to connect devices and humans more intimately.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Connect</a>
+            <a href="https://www.dropbox.com/scl/fi/8wphy29nq6mtd13x99973/Aditya-Chaurasia-Resume.pdf?rlkey=kd1gj5s2a8gp5wgt7b8s6ou9l&st=qplua1uc&dl=0&dl=1" download="Aditya_Chaurasia_resume.pdf" class="btn btn-secondary">Resume</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Education -->
+      <section class="education">
+        <div class="container">
+          <h2 class="h2" id="education">Education</h2>
+          <div class="education-boxes">
+            <article class="education-box featured-education">
+              <div class="education-textbox">
+                <div>
+                  <h3>Georgia Institute of Technology</h3>
+                  <h4 else="Master of Science">Master of Science - Computer Science</h4>
+                  <ul>
+                    <li>Information Security</li>
+                    <li> Machine Learning</li>
+                    <li> Mobile Computing and IoT</li>
+                    <li> Deep Learning</li>
+                    <li> Graduate Algorithms</li>
+                    <li> Big Data Systems and Analytics</li>
+                  </ul>
+                </div>
+              </div>
+              <picture class="education-illustration">
+                <!-- Check if imagePath is not empty and construct the image path accordingly -->
+                <img src="assets/images/education/gt.jpg" alt="Education Image" loading="lazy" />
+                <!-- If imagePath is empty, use the default image -->
+                
+              </picture>
+            </article>
+            <article class="education-box featured-education">
+              <div class="education-textbox">
+                <div>
+                  <h3>Indian Institute of Technology (Indian School of Mines), Dhanbad</h3>
+                  <h4 else="Bachelor of Technology">Bachelor of Technology - Computer Science and Engineering</h4>
+                  <ul>
+                    <li>Algorithms</li>
+                    <li> Data Structures</li>
+                    <li> Database Management Systems</li>
+                    <li> Computer Networks</li>
+                    <li> Parallel/Distributed Computing</li>
+                  </ul>
+                </div>
+              </div>
+              <picture class="education-illustration">
+                <!-- Check if imagePath is not empty and construct the image path accordingly -->
+                <img src="assets/images/education/ism.jpg" alt="Education Image" loading="lazy" />
+                <!-- If imagePath is empty, use the default image -->
+                
+              </picture>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    <!-- Industry Experiences -->
+      <section class="industry">
+        <div class="container">
+          <h2 class="h2" id="experience">Experience</h2>
+          <div class="industry-boxes">
+            <div class="industry-timeline"></div>
+            <div class="industry-box">
+              <div class="industry-textbox">
+                <h3 class="h3">Georgia Institute of Technology</h3>
+                <p class="industry-text">Graduate Teaching Assistant</p>
+                <p class="industry-text">
+                  <span>2024-01-08</span> -
+                  <span>2024-05-10</span>
+                  
+                </p>
+                <ol class="industry-technologies">
+                  <li>Assisting Prof Jun Xu and Prof Ashutosh Dhekne for the course CS 3251 - Computer Networking 1 at Georgia Tech.</li>
+                </ol>
+              </div>
+            </div>
+            <div class="industry-box">
+              <div class="industry-textbox">
+                <h3 class="h3">Samsung</h3>
+                <p class="industry-text">Lead Software Engineer</p>
+                <p class="industry-text">
+                  <span>2023-04-01</span> -
+                  <span>2023-06-30</span>
+                  
+                </p>
+                <ol class="industry-technologies">
+                  <li>Spearheaded the development of BLE onboarding for Samsung Digital Appliances using constrained real-time operating system (RTOS) boards based on TizenRT, improving device onboarding time by 30%</li>
+                </ol>
+              </div>
+            </div>
+            <div class="industry-box">
+              <div class="industry-textbox">
+                <h3 class="h3">Samsung</h3>
+                <p class="industry-text">Senior Software Engineer</p>
+                <p class="industry-text">
+                  <span>2021-04-01</span> -
+                  <span>2023-03-31</span>
+                  
+                </p>
+                <ol class="industry-technologies">
+                  <li>Implemented one-step onboarding for IoT devices in the Samsung ecosystem to reduce user friction by reducing interaction screens from 11 to 1</li>
+                  <li>Led feature development and maintenance tasks of the IoTivity project deployed on over 90 million IoT devices</li>
+                  <li>Contributed to the design and development of a new Edge Framework for Samsung IoT devices to efficiently handle contextual information, which results in expedited responses to user requests</li>
+                </ol>
+              </div>
+            </div>
+            <div class="industry-box">
+              <div class="industry-textbox">
+                <h3 class="h3">Samsung</h3>
+                <p class="industry-text">Software Engineer</p>
+                <p class="industry-text">
+                  <span>2019-06-18</span> -
+                  <span>2021-03-31</span>
+                  
+                </p>
+                <ol class="industry-technologies">
+                  <li>Proposed and spearheaded research on a Proof-of-Concept to sync time amongst multiple nearby devices with D2D communication, aiming to perform collaborative tasks</li>
+                  <li>Presented a prototype for a new D2D communication framework to create a mesh network between Samsung devices based on wireless connectivity protocols</li>
+                  <li>Developed a log analyzer tool, automating log analysis for market issues that led to manual overhead dropping by 40%</li>
+                  <li>Collaborated with team to revamp Samsung’s middleware platform, deployed in all Tizen watches to manage all incoming and outgoing communication between watch and phone</li>
+                </ol>
+              </div>
+            </div>
+            <div class="industry-box">
+              <div class="industry-textbox">
+                <h3 class="h3">Samsung</h3>
+                <p class="industry-text">Summer Intern</p>
+                <p class="industry-text">
+                  <span>2018-05-07</span> -
+                  <span>2018-07-05</span>
+                  
+                </p>
+                <ol class="industry-technologies">
+                  <li>Developed a Java-based Behavior Tree prototype for the Social-Robot project, enabling responsive actions to various stimuli</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects">
+        <div class="container">
+          <h2 class="h2" id="projects">Recent Projects</h2>
+            <div class="project-boxes">
+              <article class="project-box">
+                <div class="project-textbox">
+                  <div>
+                    <h3 class="h4">Dynamic Portfolio </h3>
+                    <p class="project-text">Designed and implemented a dynamic portfolio website using Spring Boot, Thymeleaf, Hibernate, and MySQL</p>
+                  </div>
+                  <div class="project-info">
+                    <a href="https://github.com/chaurasia-aditya/spring-portfolio-website" class="link" target="_blank" rel="noopener">View Project</a>
+                  </div>
+                </div>
+              </article>
+              <article class="project-box">
+                <div class="project-textbox">
+                  <div>
+                    <h3 class="h4">Simple C Shell</h3>
+                    <p class="project-text">Developed a basic command-line interface in C that interprets and executes user commands, emulating core functionalities of a Unix shell.</p>
+                  </div>
+                  <div class="project-info">
+                    <a href="https://github.com/chaurasia-aditya/Simple-C-Shell" class="link" target="_blank" rel="noopener">View Project</a>
+                  </div>
+                </div>
+              </article>
+              <article class="project-box">
+                <div class="project-textbox">
+                  <div>
+                    <h3 class="h4">Hateful Memes Detection</h3>
+                    <p class="project-text">Developed and evaluated various uni-modal and multi-modal deep learning approaches for detecting hateful memes.</p>
+                  </div>
+                  <div class="project-info">
+                    <a href="https://github.com/chaurasia-aditya/Exploring-Hateful-Memes-Detection" class="link" target="_blank" rel="noopener">View Project</a>
+                  </div>
+                </div>
+              </article>
+              <article class="project-box">
+                <div class="project-textbox">
+                  <div>
+                    <h3 class="h4">Captcha the Bots</h3>
+                    <p class="project-text">Explored the possible use of adversarial attacks as a means to protect CAPTCHA services from malicious attacks. Proposed using an ensemble of attacks based on the image class the CAPTCHA belongs to.</p>
+                  </div>
+                  <div class="project-info">
+                    <a href="https://github.com/chaurasia-aditya/CaptchaTheBots" class="link" target="_blank" rel="noopener">View Project</a>
+                  </div>
+                </div>
+              </article>
+              <article class="project-box">
+                <div class="project-textbox">
+                  <div>
+                    <h3 class="h4">WakeOnUWB</h3>
+                    <p class="project-text">Used UWB to trigger client Wi-Fi activation upon packet arrival at the access point, potentially reducing power consumption by approximately 20% compared to standard Wi-Fi operations.</p>
+                  </div>
+                  <div class="project-info">
+                    <a href="" class="link" target="_blank" rel="noopener">View Project</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section>
+        <h2 class="h2" id="skills">Skills</h2>
+        <div class="container">
+          <ol class="skills">
+            <li class="skill-category">
+              <div class="domain-list">
+                <span>Backend Development</span><span>Software Engineering</span><span>Embedded Development</span><span>Machine Learning</span>
+              </div>
+            </li>
+            <li class="skill">
+              <h3 class="h3">Languages</h3>
+              <ol class="skill-list">
+                <li>C</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Go</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ol>
+            </li>
+            <li class="skill">
+              <h3 class="h3">Frameworks/Libraries</h3>
+              <ol class="skill-list">
+                <li>Spring</li>
+                <li>Hibernate</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>PyTorch</li>
+                <li>TensorFlow</li>
+                <li>HuggingFace</li>
+                <li>JUnit</li>
+                <li>Android</li>
+              </ol>
+            </li>
+            <li class="skill">
+              <h3 class="h3">DevOps/Tools</h3>
+              <ol class="skill-list">
+                <li>Postman</li>
+                <li>Jenkins</li>
+                <li>Docker</li>
+                <li>Jupyter</li>
+                <li>IntelliJ</li>
+                <li>VSCode</li>
+                <li>Git</li>
+                <li>Linux</li>
+                <li>Jira</li>
+                <li>Agile</li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Contact Me</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <div class="hire-alert-div">
+                <a href="mailto:aditya.chaurasia8991@gmail.com" class="hire-alert">Mail me</a>
+              </div>
+
+              <p class="contact-text">
+                My interests span scalable computing systems and machine learning - areas I'm currently exploring at Georgia Tech. I'm passionate about solving complex problems and creating innovative, high-performance solutions. With experience in large-scale projects and a drive for continuous learning, I'm eager to contribute to cutting-edge systems that have a meaningful impact and can scale efficiently.
+              </p>
+            </div>
+            <form id="contactForm" class="contact-form" onsubmit="sendMail(event)">
+              <div class="form-field">
+                <label for="name">
+                  Name
+                  
+                </label>
+                <input type="text" id="name" required
+                       placeholder="Enter your name" name="name" value=""/>
+              </div>
+              <div class="form-field">
+                <label for="subject">
+                  Subject
+                  
+                </label>
+                <input type="text" id="subject" required
+                       placeholder="Enter subject" name="subject" value=""/>
+              </div>
+              <div class="form-field">
+                <label for="message">
+                  How can I help you?
+                  
+                </label>
+                <textarea id="message" required
+                          placeholder="Enter your message" name="message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send Mail</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/chaurasia-aditya" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/chauri/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Backend developed and integrated by <a target="_blank" rel="noopener" href="https://github.com/chaurasia-aditya">Aditya Chaurasia.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
